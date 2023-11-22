@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Hangman</title>
+    <link rel="stylesheet" href="JavascriptGame.css">
+</head>
+<body>
+    <h1>Hangman</h1>
+    <div id="endgame"></div>
+    <div id="restartgame"><button id="restartbutton">restart game</button></div>
+    <!--div that displays the underscores and letters eventually spelling the word of the game-->
+    <div id="word"></div>
+    <!--input box for letter guess-->
+    <div><input id="letter" type="text" maxlength="1" required></div>
+    <!--button to submit letter guess-->
+    <div><button id="letterGuess">Guess</button></div>
+    <!--Wrong letters display here after guessing-->
+    <div id="wrongLetters"></div>
+    <div>Guesses:<span id="guesses"></span></div>
+    <div>Health: <span id="health"></span></div>
+</body>
+    <script src="game.js"></script>
+</html>
