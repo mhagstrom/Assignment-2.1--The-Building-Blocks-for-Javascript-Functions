@@ -88,7 +88,7 @@ button.addEventListener("click", inputGuess);
 
 //alert popup upon winning
 function winAlert() {
-    endgame.textContent="You Win!";
+    endgame.textContent=("You Win!");
     input.disabled = true;
     button.disabled = true;
     restartdiv.style.display = "block";
@@ -96,7 +96,7 @@ function winAlert() {
 
 //alert popup upon losing
 function loseAlert() {
-    endgame.textContent="You Lose!";
+    endgame.textContent=("You Lose!")+(" The word was ")+(word);
     input.disabled = true;
     button.disabled = true;
     restartdiv.style.display = "block";
